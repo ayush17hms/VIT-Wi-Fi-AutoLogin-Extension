@@ -15,19 +15,17 @@ This repository contains a Chrome extension that automatically logs in to the VI
 
 1. **Clone or Download this Repository**:
    ```bash
-   git clone https://github.com/yourusername/vit-wifi-autologin-extension.git
+   git clone https://github.com/ayush17hms/VIT-Wi-Fi-AutoLogin-Extension.git
    cd vit-wifi-autologin-extension
    ```
 
 2. **Modify Configuration**:
-   - Open the `background.js` file inside the `src` folder.
+   - Open the `content.js` file inside the `src` folder.
    - Replace the placeholder Wi-Fi SSIDs, username, and password with your details.
    ```javascript
-   const wifiSSIDs = ["VIT2.4G", "VIT5G"]; // Replace with your Wi-Fi SSIDs
-   const credentials = {
-       username: "your-username", // Replace with your username
-       password: "your-password"  // Replace with your password
-   };
+      // Define your actual credentials
+      const username = "USERNAME"; // Your actual username
+      const password = "PASSWORD"; // Your actual password
    ```
 
 3. **Load the Extension into Chrome**:
@@ -52,15 +50,16 @@ This repository contains a Chrome extension that automatically logs in to the VI
 vit-wifi-autologin-extension/
 ├── src/
 │   ├── manifest.json    # Chrome extension manifest file
-│   ├── background.js    # Contains the extension's logic
-│   ├── icons/           # Folder for extension icons
+│   ├── popup.js
+│   ├── manifest.json
+│   ├── content.js    # Contains the extension's logic
 ├── README.md            # Documentation file
 ```
 
 ---
 
 ## Customize Your Extension
-If you want to add more features or support multiple portals, you can extend the `background.js` logic to handle various conditions dynamically.
+If you want to add more features or support multiple portals, you can extend the `content.js` logic to handle various conditions dynamically.
 
 ---
 
@@ -68,6 +67,3 @@ If you want to add more features or support multiple portals, you can extend the
 Feel free to fork this repository and submit pull requests if you have improvements or additional features.
 
 ---
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
