@@ -1,6 +1,6 @@
 // Define your actual credentials
-const username = "23MCA0292"; // Your actual username
-const password = "8$xlSp29oV"; // Your actual password
+const username = "USERNAME"; // Your actual username
+const password = "PASSWORD"; // Your actual password
 
 // Function to fill and submit the form
 function autoFillAndSubmit() {
@@ -35,5 +35,5 @@ function autoFillAndSubmit() {
 // Wait for the DOM to load completely, then run the auto-fill function
 window.addEventListener('load', () => {
   // Slight delay to ensure all elements are available before executing
-  setTimeout(autoFillAndSubmit, 1000); 
+  setTimeout(autoFillAndSubmit, 500); 
 });
